@@ -1,0 +1,1 @@
+/home/linux/poky/rpi-build/tmp/deploy/images/raspberrypi0
