@@ -1,1 +1,3 @@
-/home/linux/poky/rpi-build/tmp/deploy/images/raspberrypi0
+/home/linux/poky/rpi-build/tmp/deploy/images/raspberrypi0    
+
+ÒÔ .rpi-sdimgÎªºó×º
