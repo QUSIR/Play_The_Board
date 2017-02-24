@@ -1,0 +1,28 @@
+///////////////////////////////////////////////////////////////////////////////////
+
+此实例是通过新添加一个gpio控制，通过控制这个gpio来控制sdk板子上NET_MODE这盏灯的亮灭
+(当gpio 99设置为高，NET_MODE灯亮，当gpio 99 设置为低，NET_MODE灭)
+////////////////////////////////////////////////////////////////////////////////////
+
+1:将代码合入内核相应文件夹
+
+2：编译bootimage
+
+3：烧写完软件后可以通过 
+echo 0 > /sys/class/lawsleds/lawleds/lawleds 来控制灯灭
+echo 1 > /sys/class/lawsleds/lawleds/lawleds 来控制灯亮
+
+也可通过写一个测试程序来测试，驱动实现了write函数
+
+
+需注意：
+
+对应sdk板子上的modem版本应为SC20CEQAR01A08V01H8G
+此版本之前的modem端会控制这两盏盏灯，导致kernel端无法通过gpio去控制这个灯
+
+
+SC20CEQAR01A08V01H8G 版本下载地址
+链接：http://pan.baidu.com/s/1i4J9MKl 密码：t7ax
+
+
+make kernel -j16 编译boot.img
