@@ -1,3 +1,0 @@
-captrue.c适用与没有屏的usb camera调试.
-captrue是可执行程序，可以直接push到SC20 Android5.0里面用的
-总结文档和图片转换软件YUVPlayer Deluxe
